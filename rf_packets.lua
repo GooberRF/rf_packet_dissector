@@ -1,6 +1,7 @@
 -- rf_packets.lua by Goober
 -- Last updated Sept 8, 2025
 -- Wireshark Lua dissector for Red Faction (RF) + Pure Faction (PF) + Alpine Faction (AF)
+-- Relies heavily on packet documentation by rafalh: https://github.com/rafalh/rf-reversed
 
 local rf_proto = Proto("rf", "Red Faction")
 
@@ -1386,3 +1387,4 @@ end)
 -- local udp_table = DissectorTable.get("udp.port")
 -- udp_table:add(7755, rf_proto)   -- typical RF server port
 -- udp_table:add(18444, rf_proto)  -- tracker port
+
